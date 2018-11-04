@@ -65,7 +65,7 @@ class Parser implements ParserInterface
      * @param object $object
      * @param array $data
      */
-    private function parseClass(\ReflectionClass $reflectionClass, object $object, array $data)
+    private function parseClass(\ReflectionClass $reflectionClass, $object, array $data)
     {
         $definitions = $this->getDefinitions((string)$reflectionClass->getDocComment());
 
